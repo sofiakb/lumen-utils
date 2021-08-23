@@ -1,4 +1,38 @@
 {
+    "name": "sofiakb/lumen-utils",
+    "description": "A library lumen utils",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sofiakb\\Lumen\\Utils\\": "src/"
+        },
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Sofiakb",
+            "email": "contact.sofiakb@gmail.com",
+            "homepage": "https://sofianeakbly.fr",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "contact.sofiakb@gmail.com"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "require-dev": {
+        "illuminate/http": "^8.53",
+        "illuminate/support": "^8.53",
+        "phpunit/phpunit": "^9.5",
+        "laravel/lumen-framework": "^5.8"
+    },
     "version": "dev-main",
     "time": "2021-08-23"
 }
