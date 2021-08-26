@@ -11,6 +11,8 @@ namespace Sofiakb\Lumen\Utils\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Sofiakb\Lumen\Utils\Console\Commands\AppNameCommand;
+use Sofiakb\Lumen\Utils\Console\Commands\CreateControllerCommand;
+use Sofiakb\Lumen\Utils\Console\Commands\CreateServiceCommand;
 use Sofiakb\Lumen\Utils\Console\Commands\KeyGenerateCommand;
 use Sofiakb\Lumen\Utils\Console\Commands\ServeCommand;
 use Sofiakb\Lumen\Utils\Console\Commands\SetEnvCommand;
@@ -36,10 +38,12 @@ class LumenUtilsServiceProvider extends ServiceProvider
     public function register()
     {
         $commands = [
-            'command.serve'        => new ServeCommand(),
-            'command.key.generate' => new KeyGenerateCommand(),
-            'command.app.name'     => new AppNameCommand(),
-            'command.set.env'      => new SetEnvCommand(),
+            'command.serve'             => new ServeCommand(),
+            'command.key.generate'      => new KeyGenerateCommand(),
+            'command.app.name'          => new AppNameCommand(),
+            'command.set.env'           => new SetEnvCommand(),
+            'command.create.service'    => new CreateServiceCommand(),
+            'command.create.controller' => new CreateControllerCommand(),
         ];
         
         foreach ($commands as $command => $singleton) {
