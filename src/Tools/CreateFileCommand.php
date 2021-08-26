@@ -25,7 +25,7 @@ use function Symfony\Component\Translation\t;
  */
 class CreateFileCommand
 {
-    public  static function run($name, $type, $callback)
+    public static function run($name, $type, $callbacks)
     {
         $namespaceFragments = explode('\\', $name);
         
@@ -41,8 +41,8 @@ class CreateFileCommand
         
         $filepath = $directory . DIRECTORY_SEPARATOR . $className . ".php";
         
-        CreateFileFromExample::$type($className, $namespace, $filepath);
+        CreateFileFromExample::$type($className, $namespace, $filepath, $callbacks);
         
-        $callback(ucfirst($type) . " successfully created : \n\t- Class --> $name\n\t- File --> $filepath");
+        $callbacks['info'](ucfirst($type) . " successfully created : \n\t- Class --> $name\n\t- File --> $filepath");
     }
 }

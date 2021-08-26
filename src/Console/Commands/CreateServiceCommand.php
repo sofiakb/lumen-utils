@@ -47,7 +47,7 @@ class CreateServiceCommand extends Command
      */
     public function handle()
     {
-        CreateFileCommand::run($this->option('name'), 'service', [$this, 'info']);
+        CreateFileCommand::run($this->option('name'), 'service', ['info' => [$this, 'info'], 'warning' => [$this, 'warn'], 'error' => [$this, 'error'], 'askWithCompletion' => [$this, 'askWithCompletion']]);
     }
     
     /**

@@ -47,7 +47,7 @@ class CreateControllerCommand extends Command
      */
     public function handle()
     {
-        CreateFileCommand::run($this->option('name'), 'controller', [$this, 'info']);
+        CreateFileCommand::run($this->option('name'), 'controller', ['info' => [$this, 'info'], 'warning' => [$this, 'warn'], 'error' => [$this, 'error'], 'askWithCompletion' => [$this, 'askWithCompletion']]);
     }
     
     /**
