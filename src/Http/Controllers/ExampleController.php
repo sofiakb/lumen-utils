@@ -13,4 +13,11 @@ use Sofiakb\Lumen\Utils\Http\Controllers\Controller;
 
 class ExampleController extends Controller
 {
+    public function __construct(string $serviceClass = 'Service')
+    {
+        $serviceClass = Service::class;
+        $this->setModelNamespace('\\Namespace\\To\\Models\\');
+        
+        parent::__construct($serviceClass);
+    }
 }
