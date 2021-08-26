@@ -1,9 +1,10 @@
 <?php
 /**
+ * This file contains KeyGenerateCommand class.
  * Created by PhpStorm.
  * User: Sofiakb <contact.sofiakb@gmail.com>
- * Date: 18/03/2021
- * Time: 09:49
+ * Date: 29/07/2021
+ * Time: 13:31
  */
 
 namespace Sofiakb\Lumen\Utils\Console\Commands;
