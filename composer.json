@@ -31,8 +31,11 @@
         "illuminate/http": "^8.53",
         "illuminate/support": "^8.53",
         "phpunit/phpunit": "^9.5",
-        "laravel/lumen-framework": "^5.8"
+        "laravel/lumen-framework": ">5.8"
     },
     "version": "dev-main",
-    "time": "2021-08-23"
+    "time": "2021-08-23",
+    "require": {
+        "sofiakb/php-utils": "^0.0.1-beta4"
+    }
 }
