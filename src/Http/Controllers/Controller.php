@@ -50,7 +50,8 @@ class Controller extends LumenController
     public function __construct(string $serviceClass = 'Service')
     {
         $this->service = new $serviceClass;
-        $this->controllerName = str_replace('Controller', '', get_class($this));
+        $classname = get_class($this);
+        $this->controllerName = str_replace('Controller', '', (substr($classname, strrpos($classname, '\\') + 1)));
     }
     
     /**
