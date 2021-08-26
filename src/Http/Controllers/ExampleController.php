@@ -9,8 +9,8 @@
 
 namespace EXAMPLE_NAMESPACE;
 
-use Sofiakb\Lumen\Utils\Services\Service;
+use Sofiakb\Lumen\Utils\Http\Controllers\Controller;
 
-class ExampleController extends Service
+class ExampleController extends Controller
 {
 }
