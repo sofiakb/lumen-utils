@@ -17,8 +17,8 @@ class ExampleController extends Controller
     public function __construct(string $serviceClass = 'Service')
     {
         $serviceClass = Service::class;
-        $this->setModelNamespace(ClassFinder::namespace('Model'));
-        
         parent::__construct($serviceClass);
+        
+        $this->setModelNamespace(ClassFinder::namespace(Model::class));
     }
 }
