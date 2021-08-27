@@ -158,7 +158,7 @@ class Controller extends LumenController
      */
     public function destroyBy($column, $value)
     {
-        return Response::unknown($this->service->destroy($column, $value));
+        return Response::unknown($this->service->destroyBy($column, $value));
     }
     
     /**
