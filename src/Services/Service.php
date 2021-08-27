@@ -10,6 +10,7 @@
 namespace Sofiakb\Lumen\Utils\Services;
 
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Sofiakb\Utils\Result\Error;
@@ -93,6 +94,33 @@ class Service
     {
         try {
             $this->model::where($column, $value)->update((array)$data);
+            return Result::success(true);
+        }
+        catch (\Exception $e) {
+            return Result::error($e->getMessage());
+        }
+    }
+    
+    /**
+     * @param $id
+     * @param $data
+     * @return mixed
+     */
+    public function destroy($id)
+    {
+        return $this->destroy('id', $id);
+    }
+    
+    /**
+     * @param string $column
+     * @param $value
+     * @param $data
+     * @return array|Error|Success
+     */
+    public function destroyBy(string $column, $value)
+    {
+        try {
+            $this->model::where($column, $value)->delete();
             return Result::success(true);
         }
         catch (\Exception $e) {

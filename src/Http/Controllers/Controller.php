@@ -143,6 +143,25 @@ class Controller extends LumenController
     }
     
     /**
+     * @param $id
+     * @return mixed|string
+     */
+    public function destroy($id)
+    {
+        return Response::unknown($this->service->destroy($id));
+    }
+    
+    /**
+     * @param $column
+     * @param $value
+     * @return mixed|string
+     */
+    public function destroyBy($column, $value)
+    {
+        return Response::unknown($this->service->destroy($column, $value));
+    }
+    
+    /**
      * @param string $table
      * @return mixed|string
      */
