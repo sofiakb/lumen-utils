@@ -69,7 +69,7 @@ class Controller extends LumenController
      */
     public function setModel(?string $controllerName = null)
     {
-        $this->model = $this->namespace . ucfirst(Str::singular(Str::camel($controllerName ?? $this->controllerName)));
+        $this->model = (str_replace('\\\\', '\\', $this->namespace . '\\')) . ucfirst(Str::singular(Str::camel($controllerName ?? $this->controllerName)));
         $this->service->setModel($this->model);
     }
     
