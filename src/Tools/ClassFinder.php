@@ -51,4 +51,13 @@ class ClassFinder
         
         return false;
     }
+    
+    public static function namespace($className)
+    {
+        $namespaceFragments = explode('\\', $className);
+        
+        unset($namespaceFragments[count($namespaceFragments) - 1]);
+        
+        return implode('\\', $namespaceFragments);
+    }
 }
