@@ -58,6 +58,7 @@ class AppNameCommand extends Command
     {
         return array(
             array('show', null, InputOption::VALUE_NONE, 'Simply display the key instead of modifying files.'),
+            array('name', null, InputOption::VALUE_OPTIONAL, 'New name of the application.'),
         );
     }
 }
