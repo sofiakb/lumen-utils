@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52f1613399e5fda30f116c0f52da51b7",
+    "content-hash": "74b511ca27eda79394229775a7060c17",
     "packages": [
         {
             "name": "sofiakb/php-utils",
-            "version": "v0.0.1-beta4",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sofiakb/php-utils.git",
-                "reference": "da1a4fe80c2b75e08a1402d8ffc19313ef5c3c3b"
+                "reference": "452d0a94f91639e445a26e68a195514ef52dbc2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sofiakb/php-utils/zipball/da1a4fe80c2b75e08a1402d8ffc19313ef5c3c3b",
-                "reference": "da1a4fe80c2b75e08a1402d8ffc19313ef5c3c3b",
+                "url": "https://api.github.com/repos/sofiakb/php-utils/zipball/452d0a94f91639e445a26e68a195514ef52dbc2f",
+                "reference": "452d0a94f91639e445a26e68a195514ef52dbc2f",
                 "shasum": ""
             },
             "require": {
@@ -51,9 +51,9 @@
             "support": {
                 "email": "contact.sofiakb@gmail.com",
                 "issues": "https://github.com/sofiakb/php-utils/issues",
-                "source": "https://github.com/sofiakb/php-utils/tree/v0.0.1-beta4"
+                "source": "https://github.com/sofiakb/php-utils/tree/v0.0.2"
             },
-            "time": "2021-07-30T00:00:00+00:00"
+            "time": "2021-09-24T00:00:00+00:00"
         }
     ],
     "packages-dev": [
@@ -6952,9 +6952,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "sofiakb/php-utils": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
