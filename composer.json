@@ -36,6 +36,6 @@
     "version": "v0.0.3-beta9",
     "time": "2021-09-24",
     "require": {
-        "sofiakb/php-utils": "^0.0.2"
+        "sofiakb/php-utils": "^0.0.3"
     }
 }
