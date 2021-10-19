@@ -10,6 +10,7 @@
 namespace Sofiakb\Lumen\Utils\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 
 /**
  * Class SetEnvCommand
@@ -49,7 +50,7 @@ class SetEnvCommand extends Command
         if (file_exists($path)) {
     
             if (strpos($content, $name) !== false) {
-                $content = str_replace("$name=" . env($key), "$name=" . $value, $content);
+                $content = str_replace("$name=" . env($name), "$name=" . $value, $content);
             } else $content .= "\n$name=$value";
             
             file_put_contents(
