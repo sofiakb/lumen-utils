@@ -43,11 +43,18 @@ class SetEnvCommand extends Command
         $value = $this->option('value');
 
         $path = base_path('.env');
-
+        $content = File::get($path);
+    
+    
         if (file_exists($path)) {
+    
+            if (strpos($content, $name) !== false) {
+                $content = str_replace("$name=" . env($key), "$name=" . $value, $content);
+            } else $content .= "\n$name=$value";
+            
             file_put_contents(
                 $path,
-                str_replace("$name=" . env($name), "$name=" . $value, file_get_contents($path))
+                $content
             );
         }
 
