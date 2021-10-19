@@ -33,8 +33,8 @@
         "phpunit/phpunit": "^9.5",
         "laravel/lumen-framework": ">5.8"
     },
-    "version": "v0.0.3-beta11",
-    "time": "2021-10-11",
+    "version": "v0.0.4",
+    "time": "2021-10-19",
     "require": {
         "sofiakb/php-utils": "^0.0.4-beta1"
     }
