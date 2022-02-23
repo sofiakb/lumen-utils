@@ -23,7 +23,7 @@ class CreateFileFromExample
             
             $answer = strtolower($callbacks['askWithCompletion']('Do you want to overwrite it ? (Y/n)', ['yes', 'no']));
             
-            if ($answer !== 'y' && $answer !== 'o' && $answer !== 'yes' && $answer !== 'oui'){
+            if ($answer !== 'y' && $answer !== 'o' && $answer !== 'yes' && $answer !== 'oui') {
                 $callbacks['error']('aborted');
                 die();
             }
@@ -31,10 +31,15 @@ class CreateFileFromExample
         
         File::copy(implode(DIRECTORY_SEPARATOR, $example), $filepath);
         
-        return File::put(
-            $filepath,
-            Str::replace([$exampleName, 'EXAMPLE_NAMESPACE', 'HEADER_FILE_DATE', 'HEADER_FILE_TIME'], [$className, $namespace, Carbon::now()->format('d/m/Y'), Carbon::now()->format('H:i')], File::get($filepath))
-        );
+        return Str::contains($exampleName, 'Controller')
+            ? File::put(
+                $filepath,
+                Str::replace([$exampleName, 'EXAMPLE_NAMESPACE', 'HEADER_FILE_DATE', 'HEADER_FILE_TIME', 'ExampleService'], [$className, $namespace, Carbon::now()->format('d/m/Y'), Carbon::now()->format('H:i'), Str::replace('Controller', 'Service', $exampleName)], File::get($filepath))
+            )
+            : File::put(
+                $filepath,
+                Str::replace([$exampleName, 'EXAMPLE_NAMESPACE', 'HEADER_FILE_DATE', 'HEADER_FILE_TIME'], [$className, $namespace, Carbon::now()->format('d/m/Y'), Carbon::now()->format('H:i')], File::get($filepath))
+            );
     }
     
     public static function service($className, $namespace, $filepath, $callbacks)
