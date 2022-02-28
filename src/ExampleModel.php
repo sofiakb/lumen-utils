@@ -15,7 +15,6 @@ use Sofiakb\Lumen\Utils\Model;
 /**
  * Class ExampleModel
  *
- * @property ExampleService $service
  *
  * @package EXAMPLE_NAMESPACE
  * @author Sofiakb <contact.sofiakb@gmail.com>
