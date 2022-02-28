@@ -24,6 +24,7 @@ use Illuminate\Support\Carbon;
  * @method static Builder|static newQuery()
  * @method static Builder|static query()
  * @method static void truncate()
+ * @method static bool insert()
  * @mixin \Illuminate\Database\Query\Builder|Builder
  
  * @property int $id
