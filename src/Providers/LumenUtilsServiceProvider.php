@@ -2,7 +2,7 @@
 /**
  * This file contains LumenUtilsServiceProvider class.
  * Created by PhpStorm.
- * User: Sofiakb <contact.sofiak@gmail.com>
+ * User: Sofiakb <contact.sofiakb@gmail.com>
  * Date: 23/08/2021
  * Time: 12:04
  */
@@ -12,6 +12,7 @@ namespace Sofiakb\Lumen\Utils\Providers;
 use Illuminate\Support\ServiceProvider;
 use Sofiakb\Lumen\Utils\Console\Commands\AppNameCommand;
 use Sofiakb\Lumen\Utils\Console\Commands\CreateControllerCommand;
+use Sofiakb\Lumen\Utils\Console\Commands\CreateModelCommand;
 use Sofiakb\Lumen\Utils\Console\Commands\CreateServiceCommand;
 use Sofiakb\Lumen\Utils\Console\Commands\KeyGenerateCommand;
 use Sofiakb\Lumen\Utils\Console\Commands\ServeCommand;
@@ -20,7 +21,7 @@ use Sofiakb\Lumen\Utils\Console\Commands\SetEnvCommand;
 /**
  * Class LumenUtilsServiceProvider
  * @package Sofiakb\Lumen\Utils\Providers
- * @author Sofiakb <contact.sofiak@gmail.com>
+ * @author Sofiakb <contact.sofiakb@gmail.com>
  */
 class LumenUtilsServiceProvider extends ServiceProvider
 {
@@ -44,6 +45,7 @@ class LumenUtilsServiceProvider extends ServiceProvider
             'command.set.env'           => new SetEnvCommand(),
             'command.create.service'    => new CreateServiceCommand(),
             'command.create.controller' => new CreateControllerCommand(),
+            'command.create.model'      => new CreateModelCommand(),
         ];
         
         foreach ($commands as $command => $singleton) {
