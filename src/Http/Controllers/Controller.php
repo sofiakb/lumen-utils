@@ -19,7 +19,7 @@ use Sofiakb\Utils\Result\Result;
 /**
  * Class Controller
  * @package Sofiakb\Lumen\Utils\Http\Controllers
- * @author Sofiakb <contact.sofiak@gmail.com>
+ * @author Sofiakb <contact.sofiakb@gmail.com>
  */
 class Controller extends LumenController
 {

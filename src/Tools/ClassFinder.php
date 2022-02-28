@@ -2,7 +2,7 @@
 /**
  * This file contains ClassFinder class.
  * Created by PhpStorm.
- * User: Sofiakb <contact.sofiak@gmail.com>
+ * User: Sofiakb <contact.sofiakb@gmail.com>
  * Date: 26/08/2021
  * Time: 14:29
  */

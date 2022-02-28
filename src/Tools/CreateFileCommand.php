@@ -21,7 +21,7 @@ use function Symfony\Component\Translation\t;
 /**
  * Class CreateFileCommand
  * @package Sofiakb\Lumen\Utils\Console\Commands
- * @author Sofiakb <contact.sofiak@gmail.com>
+ * @author Sofiakb <contact.sofiakb@gmail.com>
  */
 class CreateFileCommand
 {

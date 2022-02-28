@@ -17,7 +17,7 @@ use Symfony\Component\Console\Input\InputOption;
 /**
  * Class KeyGenerateCommand
  * @package Sofiakb\Lumen\Utils\Console\Commands
- * @author Sofiakb <contact.sofiak@gmail.com>
+ * @author Sofiakb <contact.sofiakb@gmail.com>
  */
 class KeyGenerateCommand extends Command
 {

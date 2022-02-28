@@ -18,7 +18,7 @@ use Symfony\Component\Process\PhpExecutableFinder;
 /**
  * Class ServeCommand
  * @package Sofiakb\Lumen\Utils\Console\Commands
- * @author Sofiakb <contact.sofiak@gmail.com>
+ * @author Sofiakb <contact.sofiakb@gmail.com>
  */
 class ServeCommand extends Command
 {

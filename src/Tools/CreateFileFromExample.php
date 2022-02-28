@@ -2,7 +2,7 @@
 /**
  * This file contains CreateFileFromExample class.
  * Created by PhpStorm.
- * User: Sofiakb <contact.sofiak@gmail.com>
+ * User: Sofiakb <contact.sofiakb@gmail.com>
  * Date: 26/08/2021
  * Time: 15:09
  */
@@ -50,6 +50,11 @@ class CreateFileFromExample
     public static function controller($className, $namespace, $filepath, $callbacks)
     {
         return self::run($className, $namespace, [__DIR__, '..', 'Http', 'Controllers', 'ExampleController.php'], $filepath, 'ExampleController', $callbacks);
+    }
+    
+    public static function model($className, $namespace, $filepath, $callbacks)
+    {
+        return self::run($className, $namespace, [__DIR__, '..', 'ExampleModel.php'], $filepath, 'ExampleModel', $callbacks);
     }
     
 }

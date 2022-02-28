@@ -20,7 +20,7 @@ use Sofiakb\Utils\Result\Success;
 /**
  * Class Service
  * @package Sofiakb\Lumen\Utils\Services
- * @author Sofiakb <contact.sofiak@gmail.com>
+ * @author Sofiakb <contact.sofiakb@gmail.com>
  */
 class Service
 {

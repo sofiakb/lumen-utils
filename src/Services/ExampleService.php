@@ -1,7 +1,7 @@
 <?php
 /**
  * This file contains ExampleService class.
- * @author Sofiakb <contact.sofiak@gmail.com>
+ * @author Sofiakb <contact.sofiakb@gmail.com>
  * Created by PhpStorm on HEADER_FILE_DATE at HEADER_FILE_TIME
  */
 

@@ -4,7 +4,7 @@
  *
  * Created by PhpStorm on HEADER_FILE_DATE at HEADER_FILE_TIME
  *
- * @author Sofiakb <contact.sofiak@gmail.com>
+ * @author Sofiakb <contact.sofiakb@gmail.com>
  */
 
 namespace EXAMPLE_NAMESPACE;
@@ -18,7 +18,7 @@ use Sofiakb\Lumen\Utils\Tools\ClassFinder;
  * @property ExampleService $service
  *
  * @package EXAMPLE_NAMESPACE
- * @author Sofiakb <contact.sofiak@gmail.com>
+ * @author Sofiakb <contact.sofiakb@gmail.com>
  */
 class ExampleController extends Controller
 {
