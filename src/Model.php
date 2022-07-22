@@ -26,7 +26,6 @@ use Illuminate\Support\Carbon;
  * @method static void truncate()
  * @method static bool insert()
  * @mixin \Illuminate\Database\Query\Builder|Builder
- 
  * @property int $id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -46,5 +45,13 @@ use Illuminate\Support\Carbon;
  */
 class Model extends BaseModel
 {
+    public static function findOneBy(string $column, $value)
+    {
+        return static::where($column, $value)->first();
+    }
 
+    public static function findById(int $id)
+    {
+        return static::findOneBy('id', $id);
+    }
 }
