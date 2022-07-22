@@ -108,7 +108,7 @@ class Service
      */
     public function destroy($id)
     {
-        return $this->destroy('id', $id);
+        return $this->destroyBy('id', $id);
     }
     
     /**
